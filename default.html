@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+	<style>
+		a.test {
+			font-weight: bold;
+		}
+    </style>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+	 <a href="http://jquery.com/">hQuery</a>
+    <script src="jquery-3.1.0.js"></script>
+    <script>
+ 
+    $( document ).ready(function() {
+	$( "a" ).addClass( "test" );
+		
+$( "a" ).removeClass( "test" );
+ 
+    $( "a" ).click(function( event ) {
+ 
+        $( this ).hide( "slow" );
+		
+ 
+    });
+ 
+});
+ 
+    </script>
+</body>
+</html>
